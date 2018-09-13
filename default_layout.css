@@ -1,0 +1,432 @@
+@import url('//fonts.googleapis.com/css?family=Ribeye Marrow');
+@import url('//fonts.googleapis.com/css?family=Sofia');
+@import url('//fonts.googleapis.com/css?family=Berkshire Swash');
+@import url('//fonts.googleapis.com/css?family=Boogaloo');
+@import url('//fonts.googleapis.com/css?family=Allura');
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h1 {  
+  font-family: 'Boogaloo';
+  border-radius: 0.25em;
+  background-image: url("group_S.svg");
+  font-weight: bold;
+  color: #07214f;
+  /*text-shadow: 0 0 3px white;*/
+  text-shadow: 2px 2px 3px white;
+  text-align: center;
+  font-size:65px;
+  margin-top: 0%;
+  margin-bottom: 0px;
+}
+
+
+body{
+  background-image: url("background.png");
+  background-size: cover; 
+}
+
+
+
+.error{
+  color: #7FFF00;
+}
+
+.main_page_menu{
+	max-width:100%;
+	text-align: center;
+}
+
+nav {
+  color: #FFF;
+  background-color: #041128; 
+  border-radius: 0.5em;
+  padding: 0.25ex 1em 0.25ex 1em;
+}
+
+nav > ul {
+  font-family: 'Sofia';
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+nav > ul > li + li {
+
+  margin-top: 0;
+  margin-left: 5ex;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+nav > ul > .nav-center {
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav > ul > li > a{
+	display: block;
+  border-radius: 0.5em;
+	padding: 0.5ex 1em;
+  color: #d7f442;
+  text-shadow: 3px 3px 1px black;
+  box-shadow: 4px 4px 2px black;
+	background-color: #08526d;
+	font-weight: bold;
+  text-decoration: none;
+	
+}
+
+
+
+
+nav > ul > li > a > span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+nav > ul > li > a > span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+nav > ul > li > a:hover > span {
+  padding-right: 25px;
+}
+
+nav > ul > li > a:hover > span:after {
+  opacity: 1;
+  right: 0;
+}
+
+nav > ul > li > a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+table{
+  font-family: 'Boogaloo';
+}
+.Contact{
+  text-align-last: center;
+}
+
+h2 {
+  font-family: 'Berkshire Swash';
+   color: #1a001a;
+   text-align: center;
+   font-size: 50px;
+    text-shadow: 2px 2px;
+}
+
+p + h2 {
+  font-family: 'Berkshire Swash';
+   color: #1a001a;
+   text-align: center;
+   font-size: 50px;
+    text-shadow: 2px 2px;
+	text-shadow: 2px 2px 2px white;
+}
+
+h3{
+
+  font-family: 'Berkshire Swash';
+   color: #1a001a;
+   text-align: center;
+   font-size: 36px;
+    text-shadow: 2px 2px 2px white;
+
+}
+p + .commands1 > a{
+	margin-left: 45%;
+    display: block;
+	color: white;
+	text-shadow: 2px 3px 2px black;
+	box-shadow:3px 3px 2px black;
+	text-align-last: center;
+    width: 95px;
+    height: 40px;
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+	  text-decoration: none;
+}
+
+
+input:focus {
+    background-color: #b5ccb9;
+}
+textarea:focus{
+  background-color: #b5ccb9;
+}
+
+
+#error_msg
+/*This is the error message on signup page which pops up if some error was found
+*/
+{
+  width: 50%;  
+  margin: 5px auto; 
+  height: 30px; 
+  border: 1px solid #FF0000; 
+  opacity: 0.7;
+  filter: alpha(opacity=50); 
+  background: #FFB9B8; 
+  color: #FF0000;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+#error_msg2
+/*This is the succes message on about_us page which pops up if themessage was sent without any errors.*/
+{
+  width: 50%;  
+  margin: 5px auto; 
+  height: 30px; 
+  border: 1px solid #003300;
+  opacity: 0.7;
+  filter: alpha(opacity=50);  
+  background: green;
+  text-shadow: 2px 2px 2px black; 
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.button{
+text-align-last: center;
+text-shadow: 2px 2px;
+color: #460687;
+font-weight: bold;
+border-radius: 0.5em;
+margin-left:auto;
+margin-right:auto;
+cursor: pointer;
+}
+.button input:hover{
+  color: blue;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 0.5em;
+}
+
+
+.button2 > a{
+display: block;
+color: blue;
+text-shadow: 2px 2px 2px white;
+text-align-last: center;
+background-color: white;
+font-size: 20px ;
+font-weight: bold;
+border-radius: 0.5em;
+cursor: pointer;
+font-weight: bold;
+text-decoration: none;
+}
+
+.button2 > a:hover{
+  display: block;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  font-size: 20px ;
+  text-align-last: center;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 0.5em;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.commands > a{
+    display: block;
+    width: 115px;
+    height: 15px;
+    color: white;
+    background: #F00;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.commands1{
+  float: center;
+  align-self: center;
+  text-align: center
+}
+.commands1 > a{
+
+    display: block;
+	  color: white;
+	  text-shadow: 2px 2px 2px black;
+	  text-align-last: center;
+    width: 115px;
+    height: 15px;
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+	  text-decoration: none;
+}
+
+p{
+	text-align: center;
+	font-size: 25px;
+  font-family: 'Boogaloo';
+}
+
+img{
+  width: 600px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foot > a{
+	color: blue;
+	margin-left:90%;
+}
+
+.xmltag > p{
+
+	color: white;
+	text-shadow: 3px 3px 2px black;
+	font-size: 27;
+	margin-left: 10%;
+	margin-right:10%;
+}
+
+#move_to_center{
+
+	margin-left:45%;
+	margin-right:45%;
+
+}
+
+#food_table > table{
+  border-collapse: collapse;
+}
+
+
+#food_table > table,tr,td{
+  color: white;
+  font-size:32px;
+   border: 2px solid blue;
+}
+
+.dev_table >table,tr,td{
+	
+	color: black;
+    font-size:40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dev_table >table,tr,td > .dev_element{
+	border:none;
+	color: black;
+    font-size:40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dev_table >table,tr,td > p{
+	border:none;
+	color: black;
+    font-size:40px;
+}
+
+.contact_us > table,tr,td{
+	border:none;
+  color: black;
+  font-size:20px;
+
+}
+

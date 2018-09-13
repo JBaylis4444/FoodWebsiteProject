@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xslt" href="master.xslt"?>
+
+<developers_page>
+
+		<page_name>Developers Page</page_name>
+
+<table>
+
+		<person> 
+				<firstname>Ayub</firstname>
+				<lastname>Khan</lastname>
+				<job>Developer</job>
+				<school>University of Windsor</school>
+				<major>
+					Computer Science with Applied Computing
+				</major>
+		</person>
+		
+		
+
+       <person>
+              <firstname>Josh</firstname>
+              <lastname>Baylis</lastname>
+			  <job>Developer</job>
+			  <school>University of Windsor</school>
+				<major>
+					Honors [Physics and Computer Science] 
+				</major>
+		
+			  
+       </person>
+	   
+	   
+
+       <person>
+              <firstname>Lavanya</firstname>
+              <lastname>Bandla</lastname>
+			  <job>Developer</job>
+			  <school>University of Windsor</school>
+				<major>
+					Computer Science with Applied Computing
+				</major>
+		</person>
+
+
+		
+
+	   <person> 
+				<firstname>Viraaj</firstname>
+				<lastname>Patel</lastname>
+				<job>Developer</job>
+				<school>University of Windsor</school>
+				<major>
+					General Computer Science
+				</major>
+
+		</person>		
+		
+		
+</table>
+
+</developers_page>
+		
+		
+
+		
